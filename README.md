@@ -1,5 +1,7 @@
 # ESP32-CAM Camera Access Point
 
+## Overview
+
 I used an AI Thinker ESP32-CAM to create a Wi-Fi network and stream video directly to my phone. Once the phone joined the board's network, I could open the camera page without using a router.
 
 <img src="evidence/photos/ESP32CAM_Hardware.jpg" alt="ESP32-CAM hardware used for the lab" width="420">
@@ -28,6 +30,8 @@ The sketch uses `WiFi.softAP()` to start the board's Wi-Fi network. It then star
 | Serial Monitor printed the camera URL | [Serial Monitor](evidence/screenshots/serial-monitor.jpg) |
 | The phone browser showed the live camera stream at `192.168.4.1` | [Live stream](evidence/screenshots/live-stream.jpg) |
 
+[iPhone Wi-Fi settings screenshot](evidence/screenshots/iphone-wifi-settings.png)
+
 ## Troubleshooting
 
 The Serial Monitor was blank the first time I opened it. I pressed Reset with the monitor open, and the board printed its startup messages and the camera URL.
@@ -36,3 +40,7 @@ The Serial Monitor was blank the first time I opened it. I pressed Reset with th
 
 - [Espressif CameraWebServer example](https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer)
 - [ESP32-CAM access point guide](https://randomnerdtutorials.com/esp32-cam-access-point-ap-web-server/)
+
+## License
+
+The Espressif source files retain their upstream notices. The [Apache 2.0 license text](sketches/AccessPoint_CameraWebServer/LICENSE-APACHE-2.0.txt) is included alongside the sketch.
