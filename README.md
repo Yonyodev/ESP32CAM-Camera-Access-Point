@@ -26,8 +26,7 @@ The sketch uses `WiFi.softAP()` to start the board's Wi-Fi network. It then star
 | What I checked | Evidence |
 |---|---|
 | Serial Monitor printed the camera URL | [Serial Monitor](evidence/screenshots/serial-monitor.jpg) |
-| The phone joined the board's Wi-Fi network | [Phone Wi-Fi connection](evidence/screenshots/phone-wifi.jpg) |
-| The camera streamed video in the phone browser | [Live stream](evidence/screenshots/live-stream.jpg) |
+| The phone browser showed the live camera stream at `192.168.4.1` | [Live stream](evidence/screenshots/live-stream.jpg) |
 
 ## Troubleshooting
 
